@@ -1,0 +1,45 @@
+{
+  "name": "@billing-io/react",
+  "version": "1.0.0",
+  "description": "React hooks for the billing.io crypto checkout API",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "@billing-io/sdk": "file:../sdk-js",
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "typescript": "^5.5.0"
+  },
+  "keywords": [
+    "billing.io",
+    "react",
+    "hooks",
+    "crypto",
+    "checkout",
+    "stablecoin",
+    "payments"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/billing-io/sdk-react.git"
+  }
+}
